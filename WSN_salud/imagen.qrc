@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>./images/abuelo.jpg</file>
+        <file>./images/figcinco.jpg</file>
+        <file>./images/figcuatro.png</file>
+        <file>./images/figone.jpeg</file>
+        <file>./images/figsix.jpeg</file>
+        <file>./images/figtres.jpg</file>
+        <file>./images/figtwo.jpg</file>
+        <file>./images/images.jpg</file>
+        <file>./images/blo.png</file>
+        <file>./images/cancel.png</file>
+        <file>./images/iconfive.png</file>
+        <file>./images/iconnine.png</file>
+        <file>./images/iconseven.png</file>
+        <file>./images/iconsix.png</file>
+        <file>./images/iconthree.png</file>
+        <file>./images/in.png</file>
+        <file>./images/pdf.png</file>
+    </qresource>
+</RCC>

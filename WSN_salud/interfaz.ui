@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>873</width>
-    <height>801</height>
+    <width>1227</width>
+    <height>857</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,7 +28,7 @@
     <property name="geometry">
      <rect>
       <x>650</x>
-      <y>210</y>
+      <y>230</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -106,20 +106,46 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>-10</y>
-      <width>871</width>
-      <height>791</height>
+      <x>350</x>
+      <y>40</y>
+      <width>451</width>
+      <height>401</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Imagenes/abuelo.jpg</pixmap>
+     <pixmap resource="imagen.qrc">:/img/images/abuelo.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>490</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ON/OFF</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>460</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
     </property>
    </widget>
    <zorder>label_4</zorder>
@@ -129,19 +155,23 @@ p, li { white-space: pre-wrap; }
    <zorder>label</zorder>
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
+   <zorder>led</zorder>
+   <zorder>label_5</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>873</width>
+     <width>1227</width>
      <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="imagen.qrc"/>
+ </resources>
  <connections/>
 </ui>
