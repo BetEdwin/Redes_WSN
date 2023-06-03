@@ -31,6 +31,14 @@ class MainWindow(QtWidgets.QMainWindow):
         # Carga los datos del archivo de texto y muestra en la tabla
         self.load_data_to_table()
         self.grafic.clicked.connect(self.graficar)
+        self.led.clicked.connect(self.toggle_led)
+        
+        self.LED_PIN = 7
+        self.BUTTON_PIN = 17
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(self.LED_PIN, GPIO.OUT)
+        GPIO.setup(self.BUTTON_PIN, GPIO.IN)
+        GPIO.output(self.LED_PIN, GPIO.LOW)
 
     def load_data_to_table(self):
         # Ruta del archivo de texto
@@ -74,11 +82,16 @@ class MainWindow(QtWidgets.QMainWindow):
                 
             plt.xlabel('Seg')
             plt.tight_layout()
-            plt.show()                            
-     
-       
-         
-      
+            plt.show()
+            
+    def toggle_led(self):
+        #if self.led.isChecked==True:
+        if GPIO.input(self.BUTTON_PIN) == GPIO.HIGH:
+            GPIO.output(self.LED_PIN, GPIO.HIGH)
+            self.label_5.setText("LED encendido")
+        else:
+            GPIO.output(self.LED_PIN, GPIO.LOW)
+            self.label_5.setText("LED apagado")  
 
 # Crea una instancia de la aplicación Qt
 app = QApplication(sys.argv)
